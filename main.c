@@ -8,7 +8,7 @@ int main(void)
   Point current_location[] = {{18, 86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}};
   Point closest_food_location = {0, 0};
 
-  for (int i = 0; i < 5; i++)
+  DO_FIVE_TIMES
   {
     get_closest_food(food_points, points_length, current_location[i], &closest_food_location);
     printf("Food location: [%d %d] is closest to organism location: [%d %d]\n", closest_food_location.x, closest_food_location.y, current_location[i].x, current_location[i].y);

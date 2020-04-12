@@ -8,9 +8,9 @@ unsigned int get_distance(Point point_A, Point point_B)
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location)
 {
-  unsigned int distance, closest_distance = 4294967295;
+  unsigned int distance, closest_distance = MAX_VALUE;
 
-  for (int i = 0; i < points_length; i++)
+  DO_LENGTH_TIMES
   {
     distance = get_distance(food_points[i], current_location);
     if (closest_distance > distance)
