@@ -11,7 +11,7 @@ int main(void)
   for (int i = 0; i < 5; i++)
   {
     get_closest_food(food_points, points_length, current_location[i], &closest_food_location);
-    printf("Closest food : [%d %d] of organism: [%d %d]\n", closest_food_location.x, closest_food_location.y, current_location[i].x, current_location[i].y);
+    printf("Food location: [%d %d] is closest to organism location: [%d %d]\n", closest_food_location.x, closest_food_location.y, current_location[i].x, current_location[i].y);
   }
   return 0;
 }
