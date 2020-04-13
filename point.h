@@ -12,7 +12,7 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
-#define MAX_VALUE 4294967295 // max value of unsigned int
+#define MAX_VALUE +INFINITY 
 #define DO_FIVE_TIMES for (int i = 0; i < 5; i++)
 #define DO_LENGTH_TIMES for (int i = 0; i < points_length; i++)
 
